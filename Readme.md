@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Alexey Akutin](https://up.htmlacademy.ru/htmlcss/25/user/973763).
-* Наставник: `Неизвестно`.
+* Наставник:  [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 
