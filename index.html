@@ -7,31 +7,39 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a href="index.html" class="main-logo">
+        <a class="main-logo">
           <img src="img/...svg" alt="Логотип Интернет-магазина Device" width="163" height="35">
         </a>
+        <form class="main-navigation-user-search" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+            <input type="search" class="main-navigation-user-search-input" name="search" placeholder="Поиск по сайту" id="site-search">
+            <button class="search-button" type="submit">Найти</button>
+          </p>
+        </form>
         <ul class="main-navigation-user">
-          <li>
-            <form class="main-navigation-user-search" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-              <input type="text" class="main-navigation-user-search-input" name="search" placeholder="Поиск по сайту" id="site-search">
-              <button class="search-button" type="submit">Найти</button>
-            </form>
-          </li>
           <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
         </ul>
+        <a class="main-navigation-user-item" href="#">Сравнить</a>
+        <a class="main-navigation-user-item" href="#">Корзина</a>
         <ul class="main-navigation-site">
           <li>
             <a href="catalog.html">Каталог товаров</a>
             <ul class="main-navigation-site-submenu">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
+              <li>
+                <ul class="main-navigation-site-submenu-category">
+                  <li><a href="catalog.html">Виртуальная реальность</a></li>
+                  <li><a href="catalog.html">Моноподы для селфи</a></li>
+                  <li><a href="catalog.html">Экшн-камеры</a></li>
+                </ul>
+                <ul class="main-navigation-site-submenu-category">
+                  <li><a href="catalog.html">Фитнес-браслеты</a></li>
+                  <li><a href="catalog.html">Умные часы</a></li>
+                </ul>
+                <ul class="main-navigation-site-submenu-category">
+                  <li><a href="catalog.html">Квадрокоптеры</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li><a href="#">Доставка</a></li>
@@ -107,34 +115,34 @@
         <h2 class="visually-hidden">Наши товары</h2>
         <ul class="goods-list">
           <li class="goods-item goods-item-image1">
-            <a href="#">Виртуальная реальность</a>
+            <a href="catalog.html">Виртуальная реальность</a>
           </li>
           <li class="goods-item goods-item-image2">
-            <a href="#">Моноподы для селфи</a>
+            <a href="catalog.html">Моноподы для селфи</a>
           </li>
           <li class="goods-item goods-item-image3">
-            <a href="#">Экшн-камеры</a>
+            <a href="catalog.html">Экшн-камеры</a>
           </li>
           <li class="goods-item goods-item-image4">
-            <a href="#">Фитнес-браслеты</a>
+            <a href="catalog.html">Фитнес-браслеты</a>
           </li>
           <li class="goods-item goods-item-image5">
-            <a href="#">Умные часы</a>
+            <a href="catalog.html">Умные часы</a>
           </li>
           <li class="goods-item goods-item-image6">
-            <a href="#">Квадрокоптеры</a>
+            <a href="catalog.html">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
       <section class="slider2">
         <h2 class="visually-hidden">Сервис</h2>
-        <input class="visually-hidden slider2-toggle-1" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden slider2-toggle-2" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden slider2-toggle-3" type="radio" id="product-3" name="toggle">
+        <input class="visually-hidden slider2-toggle-1" type="radio" id="service-1" name="toggle" checked>
+        <input class="visually-hidden slider2-toggle-2" type="radio" id="service-2" name="toggle">
+        <input class="visually-hidden slider2-toggle-3" type="radio" id="service-3" name="toggle">
         <div class="slider2-controls">
-          <label for="product-1">Первый слайд</label>
-          <label for="product-2">Второй слайд</label>
-          <label for="product-3">Третий слайд</label>
+          <label for="service-1">Первый слайд</label>
+          <label for="service-2">Второй слайд</label>
+          <label for="service-3">Третий слайд</label>
         </div>
         <ul class="slider2-list">
           <li class="slider2-item">
@@ -199,7 +207,7 @@
     </main>
     <footer>
       <div class="footer-contacts">
-        <a class="footer-contacts-logo" href="index.html" aria-label="Перейти на главную страницу">
+        <a class="footer-contacts-logo">
           <img src="img/....svg" alt="Логотип интернет-магазина Device" width="163" height="35">
         </a>
         <p>г. Москва, ул. Строителей, 15</p>
@@ -222,7 +230,7 @@
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
+        <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         <a class="footer-htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Интенсив «Профессиональный HTML и CSS, уровень 1»">
           <img src="img/....svg" alt="Логотип htmlacademy.ru" width="27" height="35">
         </a>
@@ -237,7 +245,7 @@
         </p>
         <p>
           <label for="e-mail">Ваш e-mail:</label>
-          <input type="text" class="write-us-input" name="e-mail" placeholder="email@example.com" id="e-mail">
+          <input type="email" class="write-us-input" name="e-mail" placeholder="email@example.com" id="e-mail">
         </p>
         <p>
           <label for="letter-content">Текст письма:</label>
