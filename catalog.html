@@ -68,8 +68,12 @@
               </div>
             </div>
             <ul>
-              <li class="filter-price">от 0</li>
-              <li class="filter-price">до 5000</li>
+              <li class="filter-price">
+                <label>от<input class="price-input" type="number" min="0" step="1" name="price-min" value="0"></label>
+              </li>
+              <li class="filter-price">
+                <label>до<input class="price-input" type="number" min="0" step="1" name="price-max" value="5000"></label>
+              </li>
             </ul>
           </fieldset>
           <fieldset class="filter-colour">
