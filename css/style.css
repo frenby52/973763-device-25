@@ -86,6 +86,7 @@ img {
   background-image: linear-gradient(to bottom, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
   border: none;
   /*
   width: 220px;
@@ -163,4 +164,453 @@ background-color: rgba(240, 197, 46, 0.5);
   font: inherit;
   color: #000000;
   letter-spacing: 0.15px;
+}
+
+.main-navigation-user-logout a  {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation-user a:hover,
+.main-navigation-user-item:hover,
+.main-navigation-user a:focus,
+.main-navigation-user-item:focus  {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-navigation-user a:active,
+.main-navigation-user-item:active,
+.main-navigation-user a:active,
+.main-navigation-user-item:active  {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation-site {
+  margin: 0;
+  list-style: none;
+}
+
+.main-navigation-site a {
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.main-navigation-site a:hover,
+.main-navigation-site a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-navigation-site a:active  {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation-site-submenu {
+  display: none;
+}
+
+.main-navigation-site > li:hover .main-navigation-site-submenu {
+  display: block;
+}
+
+.main-navigation-site-submenu,
+.main-navigation-site-submenu-category {
+  margin: 0;
+  list-style: none;
+}
+
+.main-navigation-site-submenu a {
+  color: #000000;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  text-transform: none;
+}
+
+.slider1-list {
+  margin: 0;
+  list-style: none;
+}
+
+.slider1-item {
+  min-height: 488px;
+}
+
+.slider1-item:nth-child(1) {
+  background-image: url("../img/slider-1.png");
+  background-repeat: no-repeat;
+  background-position: left 0% bottom 0px;
+}
+
+.slider1-item:nth-child(2) {
+  background-image: url("../img/slider-2.png");
+  background-repeat: no-repeat;
+  background-position: left 0% bottom 0px;
+}
+
+.slider1-item:nth-child(3) {
+  background-image: url("../img/slider-3.png");
+  background-repeat: no-repeat;
+  background-position: left 0% bottom 0px;
+}
+
+.slider1-header {
+  margin: 0;
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: 0.17px;
+
+}
+
+.slider1-item p {
+  margin: 0;
+  font: inherit;
+  letter-spacing: 0.15px;
+}
+
+.slider1-item .slider1-number {
+  color: #ffffff;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 179px;
+  font-weight: 800;
+  line-height: 179px;
+  letter-spacing: 0.36px;
+}
+
+.slider1-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.slider1-table-number {
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+
+.slider1-table-text {
+  color: #464646;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+}
+
+.goods-list {
+  margin: 0;
+  list-style: none;
+}
+
+.goods-item a {
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.goods-item a:hover,
+.goods-item a:focus {
+
+}
+
+.goods-item a:active  {
+  opacity: 0.3;
+}
+
+.slider2 {
+  background-color: #e5e5e5;
+}
+
+.slider2-list {
+  margin: 0;
+  list-style: none;
+}
+
+.slider2-header {
+  margin: 0;
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.21px;
+}
+
+.slider2-item p {
+  margin: 0;
+  font: inherit;
+  letter-spacing: 0.15px;
+}
+
+.producers-list {
+  margin: 0;
+  list-style: none;
+}
+
+.about-us h2 {
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.21px;
+}
+
+.about-us-text {
+  margin: 0;
+  font: inherit;
+}
+
+.about-us-list {
+  margin: 0;
+  list-style: none;
+}
+
+.about-us-item {
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+.contacts h2 {
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.21px;
+}
+
+.contacts-text {
+  margin: 0;
+  font: inherit;
+}
+
+.contacts-map {
+  margin: 0;
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.footer-contacts p {
+  margin: 0;
+  font: inherit;
+}
+
+.footer-navigation-site-list {
+  margin: 0;
+  list-style: none;
+}
+
+.footer-navigation-site-list a {
+  color: #ffffff;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
+.footer-navigation-site-list a:hover,
+.footer-navigation-site-list a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-navigation-site-list a:active  {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-navigation-user-list {
+  margin: 0;
+  list-style: none;
+}
+
+.footer-navigation-user-list a {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+
+
+.footer-navigation-user-logout a  {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-navigation-user-list a:hover,
+.footer-navigation-user-list a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-navigation-user-list a:active  {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-phone {
+  font: inherit;
+  color: #ffffff;
+}
+
+.footer-navigation-user .footer-htmlacademy-logo:hover,
+.footer-navigation-user .footer-htmlacademy-logo:focus {
+  opacity: 0.6;
+}
+
+.footer-navigation-user .footer-htmlacademy-logo:active {
+  opacity: 0.3;
+}
+
+.modal-write-us {
+  display: none;
+}
+
+.modal-map {
+  display: none;
+}
+
+/* страница каталога */
+
+.main-logo:hover,
+.main-logo:focus,
+.footer-contacts-logo:hover,
+.footer-contacts-logo:focus {
+  opacity: 0.6;
+}
+
+.main-logo:active,
+.footer-contacts-logo:active {
+  opacity: 0.3;
+}
+
+.page-title {
+  margin: 0;
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.17px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs li {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus  {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active  {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.filters {
+  background-color: #efefef;
+}
+
+.filters h2 {
+  margin: 0;
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.91px;
+}
+
+.filter {
+  margin: 0;
+}
+
+.filter fieldset {
+  border: none;
+  margin: 0;
+}
+
+.filter legend {
+  margin: 0;
+  color: #000000;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.filter-price-range ul {
+  margin: 0;
+  list-style: none;
+}
+
+.filter-price label,
+.price-input {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-input {
+  margin: 0;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+
+.filter-colour ul {
+  margin: 0;
+  list-style: none;
+}
+
+.filter-option label {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.filter-bluetooth ul {
+  margin: 0;
+  list-style: none;
+}
+
+.catalog-sort {
+  background-color: #ebebeb;
 }
