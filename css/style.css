@@ -832,11 +832,13 @@ img {
 }
 
 .filters {
-  background-color: #d9d9d9;
+
+  background-color: #ebebeb;
   width: 328px;
 }
 
 .filters h2 {
+  display: block;
   margin: 0;
   color: #000000;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -845,15 +847,20 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.2px;
+  background-color: #d9d9d9;
+  min-height: 70px;
 }
 
 .filter {
   margin: 0;
+  margin-top: 85px;
+
 }
 
 .filter fieldset {
   border: none;
   margin: 0;
+  margin-bottom: 55px;
 }
 
 .filter legend {
@@ -910,12 +917,17 @@ img {
 }
 
 .catalog-sort {
-  background-color: #ebebeb;
   display: flex;
+  background-color: #ebebeb;
+  margin-bottom: 69px;
 }
 
 .catalog {
   width: 760px;
+}
+
+.catalog-sort{
+  min-height: 70px;
 }
 
 .catalog-sort-wrapper {
@@ -934,6 +946,7 @@ img {
 }
 
 .catalog-sort-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -957,6 +970,7 @@ img {
 }
 
 .catalog-sort-arrows-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1013,6 +1027,8 @@ img {
 .catalog-item {
   background-color: #eeeeee;
   width: 360px;
+  /* height: 380px; */
+  margin-bottom: 40px;
 }
 
 .catalog-item-image {
@@ -1065,6 +1081,7 @@ img {
   padding: 0;
   list-style: none;
   background-color: #ebebeb;
+  margin-bottom: 77px;
 }
 
 .catalog-pages-item a {
