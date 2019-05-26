@@ -826,8 +826,14 @@ img {
   color: rgba(0, 0, 0, 0.1);
 }
 
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .filters {
   background-color: #d9d9d9;
+  width: 328px;
 }
 
 .filters h2 {
@@ -905,6 +911,15 @@ img {
 
 .catalog-sort {
   background-color: #ebebeb;
+  display: flex;
+}
+
+.catalog {
+  width: 760px;
+}
+
+.catalog-sort-wrapper {
+  display: flex;
 }
 
 .catalog-sort-title {
@@ -990,10 +1005,14 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-item {
   background-color: #eeeeee;
+  width: 360px;
 }
 
 .catalog-item-image {
@@ -1041,6 +1060,7 @@ img {
 }
 
 .catalog-pages {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
