@@ -120,10 +120,6 @@ img {
   /* margin-bottom: 44px; */
 }
 
-.inner-header {
-  /* margin-bottom: 44px; */
-}
-
 .main-navigation {
   position: relative;
   background-color: rgba(240, 197, 46, 0.5);
@@ -770,6 +766,16 @@ img {
 
 /* страница каталога */
 
+/* .main-inner-page {
+  width: 100%;
+  background-color: #ebebeb;
+} */
+
+/* .main-inner-wrapper {
+  outline: 2px solid red;
+  background-color: #ffffff;
+} */
+
 .inner-logo:hover,
 .inner-logo:focus {
   opacity: 0.6;
@@ -789,12 +795,16 @@ img {
   letter-spacing: 0.47px;
   margin-top: 44px;
   margin-bottom: 25px;
+  margin-left: 60px;
 }
 
 .breadcrumbs {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-left: 60px;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs a,
@@ -817,7 +827,7 @@ img {
 }
 
 .filters {
-  background-color: #efefef;
+  background-color: #d9d9d9;
 }
 
 .filters h2 {
