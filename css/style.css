@@ -122,7 +122,7 @@ img {
 
 .main-navigation {
   position: relative;
-  background-color: rgba(240, 197, 46, 0.5);
+  background-color: #f7e397;
   outline: 2px solid blue;
   min-height: 86px;
   padding: 50px 60px;
@@ -304,7 +304,7 @@ img {
   outline: 2px solid cyan;
   width: 1160px;
   left: -60px;
-  background-color: rgba(240, 197, 46, 0.5);
+  background-color: #f7e397;
 }
 
 .main-navigation-site > li:hover .main-navigation-site-submenu {
@@ -828,13 +828,19 @@ img {
 
 .catalog-wrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 .filters {
+  /* background-color: #ebebeb; */
+  /* width: 328px; */
+  flex-grow: 1;
+  outline: 2px solid green;
+}
 
-  background-color: #ebebeb;
-  width: 328px;
+.filters-form-header-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #dcdcdc;
 }
 
 .filters h2 {
@@ -849,11 +855,20 @@ img {
   letter-spacing: 3.2px;
   background-color: #d9d9d9;
   min-height: 70px;
+  width: 328px;
+  outline: 2px solid red;
+}
+
+.filter-form-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #efefef;
 }
 
 .filter {
   margin: 0;
   margin-top: 85px;
+  width: 328px;
 
 }
 
@@ -916,19 +931,26 @@ img {
   list-style: none;
 }
 
-.catalog-sort {
+.catalog {
+  /* width: 832px; */
+  flex-grow: 1;
+  outline: 2px solid green;
+}
+
+.catalog-header-wrapper {
   display: flex;
   background-color: #ebebeb;
-  margin-bottom: 69px;
+    margin-bottom: 69px;
 }
 
-.catalog {
-  width: 760px;
-}
+.catalog-sort {
+  display: flex;
+  /* background-color: #ebebeb; */
 
-.catalog-sort{
   min-height: 70px;
+  width: 832px;
 }
+
 
 .catalog-sort-wrapper {
   display: flex;
@@ -1015,6 +1037,19 @@ img {
   opacity: 0.4;
 }
 
+
+.catalog-main-wrapper {
+  display: flex;
+  background-color: #fff;
+}
+
+.catalog-list-wrapper {
+  display: flex;
+  justify-content: flex-end;
+    width: 832px;
+    outline: 2px solid red;
+}
+
 .catalog-list {
   margin: 0;
   padding: 0;
@@ -1022,6 +1057,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 760px;
+      outline: 2px solid cyan;
 }
 
 .catalog-item {
@@ -1082,6 +1119,8 @@ img {
   list-style: none;
   background-color: #ebebeb;
   margin-bottom: 77px;
+  width: 760px;
+  margin-left: 72px;
 }
 
 .catalog-pages-item a {
