@@ -20,14 +20,16 @@
               <button class="search-button" type="submit">Найти</button>
             </p>
           </form>
-          <ul class="main-navigation-user">
-            <li><a href="#">Войти</a></li>
-          </ul>
-          <a class="main-navigation-user-item" href="#">Сравнить</a>
-          <a class="main-navigation-user-item" href="#">Корзина</a>
+          <div class="main-navigation-user-wrapper">
+            <ul class="main-navigation-user">
+              <li><a href="#">Войти</a></li>
+            </ul>
+            <a class="main-navigation-user-item compare" href="#">Сравнить</a>
+            <a class="main-navigation-user-item busket" href="#">Корзина</a>
+          </div>
         </div>
         <ul class="main-navigation-site">
-          <li>
+          <li class="main-navigation-site-dropdown-item">
             <a class="main-navigation-catalog" href="catalog.html">Каталог товаров</a>
             <ul class="main-navigation-site-submenu">
               <li>
@@ -46,9 +48,13 @@
               </li>
             </ul>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <div class="main-navigation-site-wrapper">
+            <ul class="main-navigation-site-menu">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
         </ul>
       </nav>
       <section class="slider1">
