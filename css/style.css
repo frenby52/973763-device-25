@@ -2065,30 +2065,21 @@ display: none;
   margin-left: 72px;
 }
 
-.catalog-pages-item {
-  padding-top: 20px;
-  padding-left: 27px;
-  min-height: 70px;
-  box-sizing: border-box;
-}
-
 .catalog-pages-previous {
-  padding-left: 0;
   margin-right: auto;
-  margin-left: 30px;
 }
 
 .catalog-pages-next {
-  padding-left: 0;
-  margin-right: 27px;
   margin-left: auto;
 }
 
-.catalog-pages-current {
-  padding-left: 6px;
-}
-
 .catalog-pages-item a {
+  display: block;
+  padding: 0;
+  padding-top: 24px;
+  padding-left: 27px;
+  min-height: 70px;
+  box-sizing: border-box;
   color: rgba(0, 0, 0, 0.3);
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
@@ -2096,6 +2087,16 @@ display: none;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.2px;
+}
+
+.catalog-pages-previous a,
+.catalog-pages-next a {
+  padding-left: 30px;
+  padding-right: 28px;
+}
+
+.catalog-pages-current a {
+  padding-left: 10px;
 }
 
 .catalog-pages-item a:hover,
