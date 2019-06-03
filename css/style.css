@@ -1284,11 +1284,147 @@ img {
 
 .modal-write-us {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -480px;
+  margin-top: -277px;
+  box-sizing: border-box;
+  z-index: 10;
+  padding: 92px 100px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+  width: 960px;
+  min-height: 553px;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  outline: 2px solid tomato;
 }
+
+.write-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 760px;
+}
+
+.write-us-form input[type="text"],
+.write-us-form input[type="email"],
+.write-us-form textarea {
+  margin: 0;
+  /* padding: 0; */
+  margin-bottom: 33px;
+  box-sizing: border-box;
+  color: rgba(70, 70, 70, 0.4);
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.write-us-form label {
+  display: block;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.write-us-form p {
+  margin: 0;
+}
+
+.modal-user-details {
+  max-width: 360px;
+}
+
+.write-us-input {
+  width: 360px;
+  height: 50px;
+  /* margin-top: 5px; */
+  padding-left: 19px;
+}
+
+.write-us-form textarea {
+  width:760px;
+  padding-top: 15px;
+  padding-left: 19px;
+  padding-bottom: 13px;
+  min-height: 156px;
+  resize: vertical;
+  margin-bottom: 32px;
+}
+
+.write-us-button {
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.write-us-form input:hover,
+.write-us-form textarea:hover {
+  background-color: #eaeaea;
+}
+
+.write-us-form input:focus,
+.write-us-form textarea:focus {
+  border: 3px solid #f0c52e;
+  background-color: #ffffff;
+  color: #464646;
+}
+
+.write-us-form input:invalid,
+.write-us-form textarea:invalid {
+  background-color: #f6dada;
+}
+
+.modal-close {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 23px;
+  right: 22px;
+  border: none;
+  background-color: #ffffff;
+  background-image: url("../img/modal-close.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
+}
+
 
 .modal-map {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -480px;
+  margin-top: -280px;
+  z-index: 10;
+  background-color: #e9e9e9;
+  width: 960px;
+  height: 559px;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  outline: 2px solid tomato;
 }
+
+.modal-map p {
+  margin: 0;
+}
+
 
 /* страница каталога */
 
@@ -1813,6 +1949,33 @@ display: none;
   width: 360px;
   height: 380px;
   margin-bottom: 32px;
+}
+
+.catalog-item-new {
+  position: absolute;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.71;
+  letter-spacing: 0.7px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  top: 47px;
+  right: 38px;
+}
+
+.catalog-item-new::before {
+  position: absolute;
+  content: "";
+  border: 2px solid #000000;
+  border-radius: 50%;
+  width: 60px;
+  height: 61px;
+  box-sizing: border-box;
+  opacity: 0.1;
+  top: -18px;
+  right: -11px;
 }
 
 .catalog-item-price {
