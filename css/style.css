@@ -117,10 +117,6 @@ img {
   width: 220px;
 }
 
-.slider2-button {
-  width: 160px;
-}
-
 .filter-button,
 .item-popup-button {
   width: 200px;
@@ -507,6 +503,39 @@ img {
   z-index: -1;
 }
 
+.slider1-controls {
+  position: absolute;
+  display: flex;
+  right: 56px;
+  bottom: 155px;
+  z-index: 100;
+  width: 120px;
+}
+
+.slider1-controls label {
+  width: 12px;
+  height: 12px;
+  margin-left: 12px;
+  padding: 4px;
+  cursor: pointer;
+  background-image: url("../img/slider-button-empty.svg");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider1-toggle-1:checked ~ .slider1-list .slider1-item:nth-child(1),
+.slider1-toggle-2:checked ~ .slider1-list .slider1-item:nth-child(2),
+.slider1-toggle-3:checked ~ .slider1-list .slider1-item:nth-child(3) {
+  display: block;
+}
+
+.slider1-toggle-1:checked ~ .slider1-controls label:nth-child(1),
+.slider1-toggle-2:checked ~ .slider1-controls label:nth-child(2),
+.slider1-toggle-3:checked ~ .slider1-controls label:nth-child(3) {
+  background-image: url("../img/slider-button.svg");
+}
+
 .slider1-list {
   margin: 0;
   padding: 0;
@@ -514,6 +543,7 @@ img {
 }
 
 .slider1-item {
+  display: none;
   min-height: 500px;
   width: 501px;
   padding-left: 600px;
@@ -571,13 +601,13 @@ img {
   display: none;
 } */
 
-.slider1-item:nth-child(2) {
+/* .slider1-item:nth-child(2) {
   display: none;
 }
 
 .slider1-item:nth-child(3) {
   display: none;
-}
+} */
 
 .slider1-item:nth-child(2) .slider1-text {
   max-width: 460px;
@@ -813,11 +843,12 @@ img {
   width: 100%;
   min-height: 288px;
   margin-bottom: 94px;
+  outline: 2px solid blue;
 }
 
 .slider2-container {
   position: relative;
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
 }
 
 .slider2-wrapper {
@@ -827,8 +858,69 @@ img {
   outline: 2px solid red;
 }
 
-.slider2-controls {
+.slider2-controls-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   width: 400px;
+}
+
+.slider2-controls-list::after {
+  position: absolute;
+  content: "";
+  top: -73px;
+  right: 116px;
+  background-color: #000000;
+  width: 7px;
+  height: 319px;
+}
+
+.slider2-controls-item {
+  width: 278px;
+  /* outline: 2px solid green; */
+}
+
+.slider2-button {
+  position: relative;
+  width: 160px;
+  margin-top: 7px;
+  margin-bottom: 24px;
+  padding-left: 23px;
+  cursor: pointer;
+}
+
+.slider2-button.checked,
+.slider2-button:active {
+   /* width: 278px; */
+  background-color: #000000;
+  background-image: none;
+  color: #f7e184;
+
+}
+.slider2-button.checked::after,
+.slider2-button:active::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -118px;
+  background-color: #000000;
+  min-width: 118px;
+  min-height: 40px;
+  border: 0;
+  /* outline: 2px solid cyan; */
+}
+
+.slider2-controls-item:nth-child(1) .slider2-button.checked {
+  padding-left: 19px;
+}
+
+.slider2-controls-item:nth-child(2) .slider2-button.checked {
+  padding-left: 29px;
+}
+
+.slider2-controls-item:nth-child(3) .slider2-button.checked {
+  padding-left: 29px;
 }
 
 .slider2-list {
@@ -842,8 +934,50 @@ img {
 }
 
 .slider2-item {
+  position: relative;
   width: 460px;
   padding-right: 240px;
+  padding-bottom: 20px;
+  outline: 2px solid cyan;
+}
+
+.slider2-item:nth-child(1)::after {
+  position: absolute;
+  content: "";
+  top: 13px;
+  right: 6px;
+  background-color: transparent;
+  background-image: url("../img/delivery.svg");
+  background-repeat: no-repeat;
+  width: 136px;
+  height: 164px;
+  border: 0;
+}
+
+.slider2-item:nth-child(2)::after {
+  position: absolute;
+  content: "";
+  top: -12px;
+  right: -14px;
+  background-color: transparent;
+  background-image: url("../img/warranty.svg");
+  background-repeat: no-repeat;
+  width: 171px;
+  height: 194px;
+  border: 0;
+}
+
+.slider2-item:nth-child(3)::after {
+  position: absolute;
+  content: "";
+  top: -12px;
+  right: -5px;
+  background-color: transparent;
+  background-image: url("../img/credit.svg");
+  background-repeat: no-repeat;
+  width: 171px;
+  height: 194px;
+  border: 0;
 }
 
 .slider2-item:nth-child(2) {
@@ -874,7 +1008,6 @@ img {
 .slider2-item:nth-child(3) p {
   width: 425px;
 }
-
 
 .producers {
   outline: 2px solid red;
