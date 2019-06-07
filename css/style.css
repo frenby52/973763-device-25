@@ -526,7 +526,7 @@ img {
 .slider1-item {
   display: none;
   min-height: 500px;
-  width: 501px;
+  width: 502px;
   padding-left: 600px;
 }
 
@@ -589,7 +589,7 @@ img {
 .slider1-item .slider1-number {
   position: absolute;
   top: -190px;
-  right: 45px;
+  right: 47px;
   color: #ffffff;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 179px;
