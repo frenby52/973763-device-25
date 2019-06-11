@@ -640,19 +640,21 @@ img {
 }
 
 .goods {
-  margin-bottom: 154px;
+  margin-bottom: 134px;
 }
 
 .goods-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
+  margin-right: -40px;
   padding: 0;
   list-style: none;
 }
 
 .goods-item {
+  margin-right: 40px;
+  margin-bottom:20px;
   width: 160px;
   line-height: 24px;
 }
@@ -711,7 +713,6 @@ img {
 }
 
 .goods-item-link:active .goods-item-container {
-  /* background-image:none; */
   background-color: rgba(240, 197, 46, 1);
 }
 
@@ -732,22 +733,14 @@ img {
   letter-spacing: 0.18px;
 }
 
-
 .slider2 {
-  /* background-color: #e5e5e5; */
   background-image: linear-gradient(to bottom, transparent 27px, #e5e5e5 27px, #e5e5e5 100%, transparent 100%);
   width: 100%;
   min-height: 315px;
   margin-bottom: 94px;
 }
 
-/* .slider2-container {
-  position: relative;
-} */
-
 .slider2-wrapper {
-  /* position: absolute;
-  top: -27px; */
   display: flex;
 }
 
@@ -1584,12 +1577,13 @@ display: none;
 
 .filters {
   flex-grow: 1;
+  background-color: #efefef;
 }
 
 .filters-form-header-wrapper {
   display: flex;
   justify-content: flex-end;
-  background-color: #dcdcdc;
+  background-color: #ebebeb;
 }
 
 .filters h2 {
@@ -1602,7 +1596,6 @@ display: none;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.2px;
-  background-color: #d9d9d9;
   min-height: 70px;
   width: 328px;
   padding-top: 23px;
@@ -1613,7 +1606,6 @@ display: none;
 .filter-form-wrapper {
   display: flex;
   justify-content: flex-end;
-  background-color: #efefef;
 }
 
 .filter {
@@ -2069,31 +2061,26 @@ display: none;
   margin-bottom: 32px;
 }
 
-.catalog-item-new {
+.catalog-item-new::before {
   position: absolute;
+  content: "New";
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 60px;
+  height: 61px;
+  box-sizing: border-box;
+  top: 29px;
+  right: 27px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 1.71;
   letter-spacing: 0.7px;
   text-align: center;
+  padding-top: 18px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.2);
-  top: 47px;
-  right: 38px;
-}
-
-.catalog-item-new::before {
-  position: absolute;
-  content: "";
-  border: 2px solid #000000;
-  border-radius: 50%;
-  width: 60px;
-  height: 61px;
-  box-sizing: border-box;
-  opacity: 0.1;
-  top: -18px;
-  right: -11px;
+  z-index: 2;
 }
 
 .catalog-item-price {
