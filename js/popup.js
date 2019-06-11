@@ -5,7 +5,7 @@ var name_modal = popup.querySelector("[name=username]");
 var form = popup.querySelector(".write-us-form");
 var e_mail = popup.querySelector("[name=e-mail]");
 var letter_content = popup.querySelector("[name=letter-content]");
-var isStorageSupport = true;
+var is_storage_support = true;
 var storage_name = "";
 var storage_mail = "";
 
@@ -27,7 +27,7 @@ try {
   storage_name = localStorage.getItem("username");
   storage_mail = localStorage.getItem("usermail");
 } catch (err) {
-  isStorageSupport = false;
+  is_storage_support = false;
 }
 
 contacts_link.addEventListener("click", function (evt) {
@@ -55,7 +55,7 @@ form.addEventListener("submit", function (evt) {
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
     } else {
-      if (isStorageSupport) {
+      if (is_storage_support) {
         localStorage.setItem("username", name_modal.value);
         localStorage.setItem("usermail", e_mail.value);
       }
